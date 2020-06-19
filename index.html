@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+    <img src="clouds-and-sun.png" alt="clouds and sun icon">
+		<h1>Temperature Converter</h1>
+
+		<form>
+			<div class="container">
+				<label for="degree"><strong>Temperature:</strong></label>
+				<input
+					type="text"
+					placeholder="*degree"
+					name="degree"
+          class="bigger-box"
+				/>
+
+				<label for="temperature"></label>
+				<select name="temperature" class="bigger-box">
+					<option value="celsius">Celsius</option>
+					<option value="fahrenheit">Fahrenheit</option>
+				</select>
+
+				<button type="submit" class="bigger-box" id="btn">Convert</button>
+			</div>
+		</form>
+
+    <h3 id="result"></h3>
+    
+    <footer>
+      Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </footer>
+
+		<!-- <script src="app.js"></script> -->
+		<script src="app.js"></script>
+	</body>
+</html>

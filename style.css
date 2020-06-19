@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #222831;
+	background-color: #f9f9f9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	padding: 0 auto;
+	max-width: 80%;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 50px;
+}
+
+h1 {
+	color: #c81912;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	text-align: center;
+	padding-top: 10rem;
+	padding-bottom: 7rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.bigger-box {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	background-color: #ededed;
+	height: 3.5em;
+	width: 15rem;
+	margin: 0 5px 0 15px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 8px 9px 10px #888888;
+	outline: none;
+	padding: 0 10px;
+}
+
+.bigger-box:hover {
+	font-weight: 700;
+	cursor: pointer;
+	background-color: #bfd8d5;
+	color: #222831;
+}
+
+#btn {
+	color: #f9f9f9;
+	background-color: #333333;
+}
+
+#btn:hover {
+	color: #f9f9f9;
+	background-color: #c81912;
+}
+
+#result {
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 8rem;
+}
+
+.red {
+	color: #c81912;
+	padding: 0 20px;
+}
+
+.thin {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+footer {
+	font-size: 0.7rem;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+  /* margin-top: -300px; */
+	left: 0;
+	right: 0;
+  bottom: 0;
+	text-align: center;
+}
+
+@media all and (max-width: 1120px) {
+	.container {
+		display: grid;
+		grid-template-columns: repeat(1fr);
+		grid-gap: 1rem;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.bigger-box {
+		height: 3em;
+		min-width: 50vw;
+		margin: 0 5px 0 15px;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 8px 9px 10px #888888;
+		outline: none;
+	}
+
+	h1 {
+		padding-bottom: 3rem;
+	}
+
+	#result {
+		font-size: 3rem;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 3rem;
+		min-width: 80vw;
+	}
+}
